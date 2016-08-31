@@ -5,15 +5,16 @@ public class Main {
     public static void main(String args[]) {
 
         Taxi taxiUno = new Taxi();
-        taxiUno.setCiudad("Colombia");
-        taxiUno.setMatricula("YQE52D");°
+/*        taxiUno.setCiudad("Colombia");
+        taxiUno.setMatricula("YQE52D");
         taxiUno.setDistrito("Cundinamarca");
-        taxiUno.setTipoMotor(15);
+        taxiUno.setTipoMotor(15);*/
 
         System.out.println("La ciudad es " + taxiUno.getCiudad() + " la matricula " + taxiUno.getMatricula()
                 + " con distrito en " + taxiUno.getDistrito() + " y el tipo de motor es " + taxiUno.getTipoMotor());
 
-        System.out.println("Uso de datos " + taxiUno.getTipoMotor() * 5 );
+        System.out.println("Uso de datos " + taxiUno.getTipoMotor() * 5);
+
 
     }
 
@@ -22,6 +23,13 @@ public class Main {
         private String matricula;
         private String distrito;
         private int tipoMotor;
+
+        Taxi() {
+            ciudad = "Colombia";
+            matricula = "";
+            distrito = "Bogotá";
+            tipoMotor = 1;
+        }
 
         public void setCiudad(String valorCiudad) {
             ciudad = valorCiudad;
